@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    padding: 10px 50px 10px 50px;
+    background-color: lightgray;
+}
+header {
+    background-color:aqua;
+    padding: 30px;
+}
+nav {
+    background-color:blue;
+    padding: 10px;
+}
+main {
+    background-color:red;
+}
+aside {
+    background-color:yellow;
+}
+footer {
+    background-color:brown;
+    padding: 30px;
+}
+p {
+    margin: 20px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contenedor2 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.logo {
+    height: 180px;
+}
