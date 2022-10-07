@@ -68,14 +68,15 @@ ul > li {
     padding: 10px;
     border-radius: 5px;
 }
-
-ul > li:hover {
-    display: inline;
-    margin: 15px;
+ul > li > a {
+    color: lightyellow;
+    text-decoration:none;
+}
+ul > li > a:visited {
+    color: lightyellow;
+}
+ul > li > a:hover {
     color: darkorange;
-    background-color: darkblue;
-    padding: 10px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -95,4 +96,12 @@ ul > li:hover {
     color:black;
     z-index: 1;
     background-color: transparent;
+}
+.form-control {
+    display: block;
+    width: 100%;
+
+}
+form {
+    width: 50%;
 }
