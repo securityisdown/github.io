@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/quevisitar/quevisitar.css">
+    <script src="js/templates.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="contenedor2">
+    <main>
+        <h1>¿Qué visitar?</h1>
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="https://media.ambito.com/p/69050c84e2cfed04a7188abcd6afd6e0/adjuntos/239/imagenes/037/879/0037879550/1200x675/smart/cerro-catedraljpg.jpg" alt="" class="slider__img">
+                    <a href="#lugares"><h3 class="cerro-catedral-btn" v-on:click="mostrarCC()">Cerro catedral</h3></a>
+                    <p>El cerro catedral Es el centro de esquí más grande del hemisferio sur ( 1200 hectáreas esquiables ) y ofrece una amplia infraestructura de servicios para la práctica de deportes invernales. Está abierto todo el año y cuenta con 32 medios de elevación (entre aerosillas, telecabinas y medios de arrastre), facilitando el ascenso de 28 mil...</p>
+                </div>
+
+                <div class="slider__section">
+                    <img src="https://www.lugaresdenieve.com/sites/default/files/estaciones/cerro-catedral-patagonia.jpg" alt="" class="slider__img">
+                    <a href="#lugares"><h3 class="alta-patagonia-btn" v-on:click="mostrarCAP()">Catedral Alta Patagonia</h3></a>
+                    <p>La catedral cuenta con 28 medios de elevación entre cabinas; telesillas dobles, triples, cuádruple y séxtuple; magic carpet y medios de arrastre.</p>
+                </div>
+
+                <div class="slider__section">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/a7/91/2b/nahuel-huapi-national.jpg?w=1200&h=-1&s=1" alt="" class="slider__img">
+                    <a href="#lugares"><h3 class="parque-nacional-btn" v-on:click="mostrarNH()">Parque Nacional Nahuel Huapi</h3></a>
+                    <p>El Parque Nacional Nahuel Huapi se ubica al sur de la República Argentina y al noroeste de la Patagonia. Las 710.000 hectáreas que componen su territorio se emplazan en dos provincias: Neuquén y Río Negro, su vecindad con ciudades como San Carlos de Bariloche, Dina Huapi y Villa La Angostura; y cuenta con la existencia dentro del...</p>
+                </div>
+                
+                <div class="slider__section">
+                    <img src="https://media.viajando.travel/p/70fc3b08f6b8c6f2bb6d643f97c24371/adjuntos/273/imagenes/000/377/0000377896/1200x675/smart/bariloche-teleferico-cerro-ottojpg.jpg" alt="" class="slider__img">
+                    <a href="#lugares"><h3 class="confiteria-btn" v-on:click="mostrarCO()">Teleférico Cerro Otto</h3></a>
+                    <p>Lleno de incomparables tesoros para los sentidos, el lugar ofrece a los visitantes imponentes espectáculos naturales los 365 días del año. Cada estación con su encanto particular y variadas actividades para la familia, convierten a este complejo en la excursión tradicional por excelencia de San Carlos de Bariloche.</p>
+                </div>
+
+                <div class="slider__btn slider__btn--der" id="btn-der">&#62</div>
+                <div class="slider__btn slider__btn--izq" id="btn-izq">&#60</div>
+            </div>
+        </div>
+
+
+        
+        <section>
+            <article>
+                <div id="lugares">
+                    <div v-show="mostrar">
+                        <h2 class="titulo-h2">Cerro catedral</h2>
+                        <p class="parrafo1">El cerro catedral Es el centro de esquí más grande del hemisferio sur ( 1200 hectáreas esquiables ) y ofrece una amplia infraestructura de servicios para la práctica de deportes invernales. Está abierto todo el año y cuenta con 32 medios de elevación (entre aerosillas, telecabinas y medios de arrastre), facilitando el ascenso de 28 mil personas por hora.</p>
+                        <img class="img1" src="images/quevisitar/cerrocatedral1.jpg" alt="cerro catedral">
+                        <p class="parrafo2">A lo largo de toda la montaña podrás disfrutar de los hermosos paradores instalados en sus imponentes laderas, con vistas increíbles a los lagos Nahuel Huapi y Gutiérrez, la cordillera de los Andes, el cerro Tronador, y los cerros demás circundantes.</p>
+                        <p class="parrafo3">También encontrarás una villa al pie de la montaña con más de 7 mil camas, un amplio abanico de opciones gastronómicas y una gran variedad de locales comerciales.. En invierno encontrarás todo lo necesario para la práctica de esquí y snowboard: desde alquileres de equipo hasta escuelas preparadas para enseñar en todos los niveles.</p>
+                        <p class="parrafo4">En verano podés practicar múltiples actividades de aventura para toda la familia, escalada, trekking, tirolesa y magic donas. Disfrutá de hermosas vistas, gastronomía y un área de ruedas sin motor. Además, podés disfrutar de diferentes eventos de descenso en Mountain Bike y otros deportes.</p>
+                        <img class="img2" src="images/quevisitar/cerrocatedral2.jpg" alt="cerro catedral">
+                        <img class="img3" src="images/quevisitar/cerrocatedral3.jpg" alt="cerro catedral">
+                    </div>
+
+                    <div v-show="mostrar2">
+                        <h2 class="titulo-h2">Catedral Alta Patagonia</h2>
+                        <p class="parrafo1">La empresa responsable, Catedral Alta Patagónia, recibe cada temporada de esquí en invierno con un equipamiento que cuenta con: 28 medios de elevación entre cabinas; telesillas dobles, triples, cuádruple y séxtuple; magic carpet y medios de arrastre.</p>
+                        <img class="img1" src="images/quevisitar/altapatagonia1.jpg" alt="catedral alta patagonia">
+                        <p class="parrafo2">También cuenta con 1200 hectáreas para la práctica de los deportes invernales. Más de 60 pistas para todos los niveles, hacen del centro de esquí el lugar ideal para que cada uno disfrute del deporte como más le guste y pueda progresar sin importar su nivel. Sectores para principiantes, pistas y caminos de nivel intermedio y avanzado, más las áreas fuera de pista, aseguran diversión.</p>
+                        <img class="img2" src="images/quevisitar/altapatagonia2.jpg" alt="catedral alta patagonia">
+                        <p class="parrafo3">Para quienes quieren dar sus primeros pasos en los deportes de nieve, Catedral ofrece una completa área de aprendizaje en la Base. Allí, los visitantes realizan un recorrido paso a paso para luego poder disfrutar de las diferentes pistas en altura, se familiarizan con el equipo, realizan los primeros desplazamientos y giros, y aprenden a tomar el control de las tablas. Un espacio ideal para aprender de forma segura y accesible. Este sector cuenta con siete medios de elevación y tiene una superficie esquiable de más de 3,5 hectáreas al pie de la montaña.</p>
+                        <img class="img3" src="images/quevisitar/altapatagonia3.jpg" alt="catedral alta patagonia">
+                        <h3 class="parrafo4">Y en verano...</h3>
+                        <p class="parrafo5">Ascenso a la cumbre del Cerro en la Telecabina Amancay (1700 msnm) y la Telesilla Diente de Caballo (hasta los 1936 msnm). Actividades para toda la familia, vistas panorámicas y gastronomía de montaña.</p>
+                        <img class="img4" src="images/quevisitar/altapatagonia4.jpg" alt="catedral alta patagonia">
+                    </div>
+
+                    <div v-show="mostrar3">
+                        <h2 class="titulo-h2">Parque Nacional Nahuel Huapi</h2>
+                        <p class="parrafo1">El Parque Nacional Nahuel Huapi se ubica al sur de la República Argentina y al noroeste de la Patagonia. Las 710.000 hectáreas que componen su territorio se emplazan en dos provincias: Neuquén y Río Negro, su vecindad con ciudades como San Carlos de Bariloche, Dina Huapi y Villa La Angostura; y cuenta con la existencia dentro del parque de dos villas como Mascardi y Traful, parajes rurales como Cuyin Manzano y más de 700 loteos privados, resultando un lugar de encuentro de pobladores, comunidades, vecinos, instituciones, organizaciones y visitantes.</p>
+                        <img class="img1" src="images/quevisitar/nahuelhuapi1.jpg" alt="parque nacional nahuel huapi">
+                        <h3 class="titulo-h3">¿Qué protege el Parque Nacional Nahuel Huapi?</h3>
+                        <p class="parrafo2">El Parque Nacional Nahuel Huapi es refugio de naturaleza y cultura, su principal objetivo es la conservación de una porción de los bosques andinos norpatagónicos y de la estepa, promoviendo un mayor conocimiento de estos ambientes y generando otras formas de integración armoniosa con la vida en la naturaleza y el desarrollo humano, compatible con la preservación de estos ambientes.</p>
+                        <img class="img2" src="images/quevisitar/nahuelhuapi2.jpg" alt="parque nacional nahuel huapi">
+                    </div>
+
+                    <div class="cerro-otto" v-show="mostrar4">
+                        <h2 class="titulo-h2">Teleférico Cerro Otto</h2>
+                        <p class="parrafo1">Lleno de incomparables tesoros para los sentidos, el lugar ofrece a los visitantes imponentes espectáculos naturales los 365 días del año. Cada estación con su encanto particular y variadas actividades para la familia, convierten a este complejo en la excursión tradicional por excelencia de San Carlos de Bariloche.</p>
+                        <img class="img1" src="images/quevisitar/cerrootto1.jpg" alt="teleférico cerro otto">
+                        <p class="parrafo2">Montañas; lagos; bosques y cielos increíbles hacen de este lugar un verdadero paraíso terrenal. Sus actividades, diferentes según la época del año, permiten además divertirse en perfecta armonía con la naturaleza.</p>
+                        <img class="img2" src="images/quevisitar/cerrootto2.jpg" alt="teleférico cerro otto">
+                    </div>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 100%; height: 100%; display: block; flex-grow: 1;" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/anbariloche?creatorScreenName=anbariloche%20&amp;dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=es&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fwww.anbariloche.com.ar%2F&amp;sessionId=6890eb2e3b884431b759d5320e778c98f40facd0&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=anbariloche%20&amp;transparent=false&amp;widgetsVersion=1c23387b1f70c%3A1664388199485"></iframe>
+        </section>
+    </aside>
+    </div>
+    <footer></footer>
+    <script>
+        onLoad()
+    </script>
+    <script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/b686a253e101e707257b83d6110dc66e"></script>
+</body>
+</html>

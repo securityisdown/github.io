@@ -23,10 +23,10 @@ let nav=`
 <div class="hijo">
     <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Historia</a></li>
+        <li><a href="historia.html">Historia</a></li>
         <li><a href="#">Como llegar?</a></li>
-        <li><a href="#">Qué visitar?</a></li>
-        <li><a href="#">Circuitos</a></li>
+        <li><a href="quevisitar.html">Qué visitar?</a></li>
+        <li><a href="circuitos.html">Circuitos</a></li>
         <li><a href="contacto.html">Contáctenos</a></li>
     </ul>
 </div>
