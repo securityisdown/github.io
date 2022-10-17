@@ -70,6 +70,9 @@ p {
 }
 ul > li {
     display: inline;
+}
+/* ul > li {
+    display: inline;
     margin: 15px;
     color: lightyellow;
     background-color: darkblue;
@@ -86,7 +89,8 @@ ul > li > a:visited {
 ul > li > a:hover {
     color: darkorange;
     cursor: pointer;
-}
+} */
+
 
 .titulo {
     font-family: 'Permanent Marker', cursive;
@@ -118,6 +122,10 @@ ul > li > a:hover {
     flex-direction: column;
     margin-left: 1em;
     margin-top: 1.2em;
+}
+.botones {
+    width: 180px;
+    margin: 0px;
 }
 
 section>article{

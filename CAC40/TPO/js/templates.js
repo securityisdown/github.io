@@ -22,12 +22,12 @@ let nav=`
 <div class="menu">
 <div class="hijo">
     <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="#">Como llegar?</a></li>
-        <li><a href="quevisitar.html">Qué visitar?</a></li>
-        <li><a href="circuitos.html">Circuitos</a></li>
-        <li><a href="contacto.html">Contáctenos</a></li>
+        <li><a href="index.html"><img class="botones" src="images/Inicio.png"/></a></li>
+        <li><a href="historia.html"><img class="botones" src="images/Historia.png"/></a></li>
+        <li><a href="Comollegar.html"><img class="botones" src="images/Comollegar.png"/></a></li>
+        <li><a href="quevisitar.html"><img class="botones" src="images/Quevisitar.png"/></a></li>
+        <li><a href="circuitos.html"><img class="botones" src="images/Circuitos.png"/></a></li>
+        <li><a href="contacto.html"><img class="botones" src="images/Contactenos.png"/></a></li>
     </ul>
 </div>
 </div>

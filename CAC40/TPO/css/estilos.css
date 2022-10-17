@@ -65,6 +65,9 @@ p {
 }
 ul > li {
     display: inline;
+}
+/* ul > li {
+    display: inline;
     margin: 15px;
     color: lightyellow;
     background-color: darkblue;
@@ -81,7 +84,7 @@ ul > li > a:visited {
 ul > li > a:hover {
     color: darkorange;
     cursor: pointer;
-}
+} */
 
 .titulo {
     font-family: 'Permanent Marker', cursive;
@@ -107,4 +110,7 @@ ul > li > a:hover {
 }
 form {
     width: 50%;
+}
+.botones {
+    width: 180px;
 }

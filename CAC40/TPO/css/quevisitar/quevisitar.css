@@ -66,21 +66,29 @@ p {
 }
 ul > li {
     display: inline;
+}
+/* ul > li {
+    display: inline;
     margin: 15px;
     color: lightyellow;
     background-color: darkblue;
     padding: 10px;
     border-radius: 5px;
 }
-
-ul > li:hover {
-    display: inline;
-    margin: 15px;
+ul > li > a {
+    color: lightyellow;
+    text-decoration:none;
+}
+ul > li > a:visited {
+    color: lightyellow;
+}
+ul > li > a:hover {
     color: darkorange;
-    background-color: darkblue;
-    padding: 10px;
-    border-radius: 5px;
     cursor: pointer;
+} */
+
+.botones {
+    width: 180px;
 }
 
 .titulo {
