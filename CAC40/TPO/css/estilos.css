@@ -5,86 +5,114 @@
     padding: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 body {
     padding: 10px 50px 10px 50px;
-    background-color: lightgray;
-    background-image: url('../images/BARILOCHE.jpg');
+    background-color: rgba(0,0,255);
+    background-image: url('../images/bariloche.jpg');
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: round;
 }
+
 header {
-    background-color: darkgrey;
+    background-color: rgba(94,125,202,0.5);
     padding: 30px;
-    opacity: 0.5;
     border-radius: 30px 30px 0px 0px;
 }
+
 nav {
-    background-color:skyblue;
+    background-color: rgb(51, 51, 255);
     padding: 20px;
 }
+
 main {
-    background-color:red;
+    background-color: rgb(72, 105, 255);
+    color: aliceblue;
 }
+
 aside {
-    background-color:transparent;
+    background-color: rgb(64,81,255);
+    padding: 0.5em 0.5em 0 0.5em;
 }
+
 aside > section {
     height: 100%;
 }
+
 footer {
-    background-color:darkgrey;
+    background-color: rgba(169,169,169,0.5);
     padding: 30px;
-    opacity: 0.5;
     border-radius: 0px 0px 30px 30px;
 }
-footer div {
-    opacity: 1;
+
+h1 {
+    margin-left: 0.6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-p {
-    margin: 20px;
+
+h2{
+    margin-left: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
 }
+
+h3{
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p{
+    margin: 1em 1em 1em 1.2em;
+}
+
+ul > li {
+    display: inline;
+    margin: 15px;
+}
+
+section img{
+    height: auto;
+    max-height: 30em;
+    width: 60%;
+    min-width: 18em;
+    display:block;
+    margin: 1.5em auto 2em auto;
+}
+
 .menu {
     display: grid;
     grid-template-columns: 100%;
 }
+
 .cabecera {
     display: grid;
     grid-template-columns: 20% 60% 20%;
 }
+
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .contenedor2 {
     display: grid;
     grid-template-columns: 80% 20%;
+    background-color: rgb(41,45,172);
+    padding: 1em;
 }
+
 .logo {
     height: 180px;
     opacity: 1;
 }
-ul > li {
-    display: inline;
+
+.botones{
+    width: 180px;
+    margin: 0px;
 }
-/* ul > li {
-    display: inline;
-    margin: 15px;
-    color: lightyellow;
-    background-color: darkblue;
-    padding: 10px;
-    border-radius: 5px;
-}
-ul > li > a {
-    color: lightyellow;
-    text-decoration:none;
-}
-ul > li > a:visited {
-    color: lightyellow;
-}
-ul > li > a:hover {
-    color: darkorange;
-    cursor: pointer;
-} */
 
 .titulo {
     font-family: 'Permanent Marker', cursive;
@@ -94,23 +122,134 @@ ul > li > a:hover {
 .der {
     text-align: right;
 }
+
 .centro {
     text-align: center;
 }
+
 .chiqui {
     font-size: 12px;
     color:black;
     z-index: 1;
     background-color: transparent;
 }
-.form-control {
+
+.hijo1{
+    display:flex;
+    
+    align-items: center;
+}
+
+.presentacion{
+    display:grid;
+    grid-template-areas: 'titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande'
+                        '. . . . texto-parrafo . . . .'
+                        '. . . . bariloche-img . . . .';
+}
+
+.titulogrande{
+    background-image: url(../images/nieve-presentacion-historia.jpg);
+    padding: 3rem;
+    grid-area: titulogrande;
+    -webkit-text-stroke: 0.05em rgb(0, 0, 0, 90%);
+    color: white;
+    font-size: 2.5em;
+}
+
+.texto-parrafo{
+    grid-area: texto-parrafo;
+    font-family: "Spectral";
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    color: #f0f0f0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 880px;
+    margin-bottom: 36px;
+    margin-top: 16px;
+}
+
+.imagen-principal{
+    grid-area: bariloche-img;
+    height: auto;
+    max-height: 30em;
+    min-width: 18em;
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+
+.container-slider{
+    margin: 1.5em auto 0 auto;
+    width: 95%;
+    height: 28em;
+    /* max-width: 900px; */
+    overflow:hidden;
+    box-shadow: 0 0 0 4px rgb(248, 247, 247, 80%);
+    position:relative;
+}
+
+.slider{
+    display: flex;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
     display: block;
     width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
 
+.slider__btn{
+    color: black;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.8);
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
 }
-form {
-    width: 50%;
+
+.slider__btn:hover{
+    background: rgb(252, 189, 0);
+    color: white;
 }
-.botones {
-    width: 180px;
+
+.slider__btn--izq{
+    left: 10px;
+}
+
+.slider__btn--der{
+    right: 10px;
+}
+
+.cerro-catedral-btn, .alta-patagonia-btn, .parque-nacional-btn, .confiteria-btn{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 2px;
+    background-color: rebeccapurple;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.parrafo-slider{
+    margin: 0.4em;
 }
