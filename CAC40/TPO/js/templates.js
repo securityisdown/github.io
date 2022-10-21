@@ -15,7 +15,7 @@ let footer=`
 <div class="contenedor chiqui">
 <div class="hijo">Copyright 2022</div>
 <div class="hijo centro">Powered by: CAC 4.0</div>
-<div class="hijo der">Version: 1.0</div>
+<div class="hijo der" id="api">Version: 1.0</div>
 </div>
 `
 let nav=`

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -68,9 +69,14 @@ p{
     margin: 1em 1em 1em 1.2em;
 }
 
+ul {
+    margin: 0px!important;
+    padding-left: 0px!important;
+}
+
 ul > li {
     display: inline;
-    margin: 15px;
+    margin: 0px;
 }
 
 section img{

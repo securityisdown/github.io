@@ -8,47 +8,68 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/templates.js"></script>
     <script src="js/app.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
     <header></header>
     <nav></nav>
     <div class="contenedor2">
     <main>
-        <form action="">
-            <div>
-                <label for="nombre">Nombre y Apellido</label>
-                <input class="form-control" id="nombre" type="text">
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input class="form-control" type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="prov">Provincia</label>
-                <input class="form-control" id="prov" type="text">
-            </div>
-            <div>
-                <label for="tel">Teléfono</label>
-                <input class="form-control" id="tel" type="text">
-            </div>
-            <div>
-                <label for="comments">Comentarios</label>
-                <textarea class="form-control" name="comentarios" id="comments" cols="30" rows="10"></textarea>
-            </div>
-            <input type="submit" value="Enviar">
-        </form>
+		<section>
+			<div>
+				<form class="mt-5">
+					<div class="row mb-4">
+						<label class="col-2 col-form-label"></label>
+						<div class="col-6 text-center">
+							<h1>Contacto</h1>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label text-center" for="Nameinput">Nombre</label>
+						<div class="col-6">
+							<input type="text" class="form-control" id="Nameinput" placeholder="Escriba su nombre">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label text-center" for="emailinput">Email</label>
+						<div class="col-6">
+							<input type="email" class="form-control" id="emailinput" placeholder="Escriba su email">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label text-center" for="Phoneinput">Teléfono</label>
+						<div class="col-6">
+							<input type="tel" class="form-control" id="Phoneinput" placeholder="Escriba su numero de teléfono">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label text-center" for="titleinput">Asunto</label>
+						<div class="col-6">
+							<input type="text" class="form-control" id="titleinput" placeholder="Escriba el asunto del mensaje">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label text-center" for="Mensajeinput">Mensaje</label>
+						<div class="col-6">
+							<textarea style="align-content: center" id="Mensajeinput" class="form form-control" rows="10" placeholder="Escriba su Mensaje"></textarea>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label class="col-2 col-form-label"></label>
+					<div class="col-6">
+						<button type="submit" class="btn btn-primary align-bottom" id="sendmail">Enviar</button>
+					  </div>
+					</div>
+				</form>
+			</div>
+		</section>
     </main>
     <aside>
-        <section>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, in! Et, fugiat laudantium, error numquam saepe laboriosam mollitia eaque maxime consequatur impedit quam, at assumenda distinctio aliquid laborum sed velit.
-        Accusantium optio doloribus ab mollitia iusto sed illum nulla ducimus perferendis! Voluptas dignissimos quasi laborum nobis maiores nisi earum vitae deserunt, incidunt est. Adipisci, corporis itaque velit nobis repudiandae consequuntur?</p>
+		<section>
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 100%; height: 100%; display: block; flex-grow: 1;" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/anbariloche?creatorScreenName=anbariloche%20&amp;dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=es&amp;maxHeight=500px&amp;origin=https%3A%2F%2Fwww.anbariloche.com.ar%2F&amp;sessionId=6890eb2e3b884431b759d5320e778c98f40facd0&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=anbariloche%20&amp;transparent=false&amp;widgetsVersion=1c23387b1f70c%3A1664388199485"></iframe>
         </section>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati repellat veniam architecto, consequatur perferendis magnam cum eaque sint repudiandae nemo rem, illo fugiat tempore reprehenderit omnis eum porro delectus.
-        Nesciunt ea explicabo, doloremque quod corrupti eius et, accusamus sequi labore amet, dolorum assumenda eligendi sed maiores iure eum voluptates. Quia illum similique perspiciatis. Esse facere reprehenderit eos qui nesciunt.
-        Unde repellendus cum provident quae, corporis praesentium voluptate ipsum repellat placeat exercitationem, aperiam corrupti recusandae eius. Ipsam totam dicta repudiandae, eveniet distinctio recusandae sequi voluptatem nihil amet consequuntur voluptatum tempora.</p>
-        </section>
-    </aside>
+		</aside>
     </div>
     <footer></footer>
     <script>
