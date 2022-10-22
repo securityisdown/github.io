@@ -78,9 +78,7 @@ ul > li {
 
 section img{
     height: auto;
-    /* max-height: 30em; */
     width: 60%;
-    min-width: 14em;
     display:block;
     margin: 1.5em auto 2em auto;
 }
@@ -168,10 +166,7 @@ section img{
 }
 
 .imagen-principal{
-    grid-area: bariloche-img;
     height: auto;
-    max-height: 30em;
-    min-width: 18em;
     width: 90%;
     display:block;
     margin:auto;
@@ -253,18 +248,24 @@ section img{
     margin: 0.3em 0.5em 0 0.5em;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 450px) and (max-width: 768px)
 {
     body{
         padding: 0px;
     }
 
     section img{
-        margin: 0 auto 0 auto;
+        margin: 0 0 1em 0;
+    }
+
+    article img{
+        width: 98%;
     }
 
     .cabecera{
-        display:block;
+        grid-template-columns: 20% 80%;
+        column-gap: 1em;
+
     }
 
     .titulo{
@@ -310,12 +311,12 @@ section img{
                         'nav nav nav'
                         'main main main'
                         'footer footer footer';
-    width: 100%;
-    margin: 0em 0em;
+    width: 95%;
+    margin: 0em auto;
     }
 
     .parrafo-slider{
-        font-size: 0.8em;
+        font-size: 1em;
         overflow-y:scroll;
     }
 
@@ -333,5 +334,102 @@ section img{
     .iframeGoogle{
         height: 20em;
         width:95%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    body{
+        padding: 0px;
+    }
+
+    section img{
+        margin: 0em 0 1em 0;
+    }
+
+    article>img{
+        display:block;
+        width: 95%;
+    }
+
+    .cabecera{
+        display:block;
+    }
+
+    .titulo{
+        font-size: 3em;
+    }
+
+    .logo{
+        height:auto;
+        width:100%;
+    }
+
+    #cont_b686a253e101e707257b83d6110dc66e{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        padding-top:0.1em;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    .contenedor2{
+        display:block;
+        grid-area:main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    .responsive{
+    display:grid;
+    grid-template-areas: 'header header header'
+                        'nav nav nav'
+                        'main main main'
+                        'footer footer footer';
+    width: 100%;
+    margin: 0em 0em;
+    }
+
+    .parrafo-slider{
+        font-size: 0.8em;
+        overflow-y:scroll;
+    }
+
+    .titulogrande{
+        font-size: 2em;
+        text-align: center;
+        padding: 0.6em 0em;
+    }
+    
+    .h1-quevisitar{
+        font-size: 2em;
+        margin: 0em 0 0 0.5em;
+    }
+
+    .iframeGoogle{
+        height: 20em;
+        width:95%;
+    }
+
+    .texto-parrafo{
+        margin:0 0.5em 1em 0.5em;
     }
 }
