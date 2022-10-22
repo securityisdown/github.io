@@ -248,6 +248,7 @@ section img{
     margin: 0.3em 0.5em 0 0.5em;
 }
 
+
 @media screen and (min-width: 450px) and (max-width: 768px)
 {
     body{
@@ -362,7 +363,7 @@ section img{
 
     .logo{
         height:auto;
-        width:100%;
+        width:50%;
     }
 
     #cont_b686a253e101e707257b83d6110dc66e{
@@ -406,6 +407,11 @@ section img{
                         'footer footer footer';
     width: 100%;
     margin: 0em 0em;
+    }
+
+    .container-slider{
+        margin: none;
+        width: 16em;
     }
 
     .parrafo-slider{
