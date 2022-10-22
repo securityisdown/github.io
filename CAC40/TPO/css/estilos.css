@@ -14,6 +14,10 @@ body {
     background-repeat: round;
 }
 
+.responsive{
+    display:block;
+}
+
 header {
     background-color: rgba(94,125,202,0.5);
     padding: 30px;
@@ -45,27 +49,26 @@ footer {
     border-radius: 0px 0px 30px 30px;
 }
 
-h1 {
-    margin-left: 0.6em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-h2{
-    margin-left: 0.8em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-}
-
-h3{
+article{
     margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 p{
-    margin: 1em 1em 1em 1.2em;
+    margin: 1em 1em 1em 0em;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    margin: 0.5em 1em 0.5em 0em;
+}
+
+h3{
+    margin: 0.7em 1em 0.5em 0em;
 }
 
 ul > li {
@@ -75,9 +78,9 @@ ul > li {
 
 section img{
     height: auto;
-    max-height: 30em;
+    /* max-height: 30em; */
     width: 60%;
-    min-width: 18em;
+    min-width: 14em;
     display:block;
     margin: 1.5em auto 2em auto;
 }
@@ -140,20 +143,11 @@ section img{
     align-items: center;
 }
 
-.presentacion{
-    display:grid;
-    grid-template-areas: 'titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande'
-                        '. . . . texto-parrafo . . . .'
-                        '. . . . bariloche-img . . . .';
-}
-
 .titulogrande{
-    background-image: url(../images/nieve-presentacion-historia.jpg);
-    padding: 3rem;
-    grid-area: titulogrande;
-    -webkit-text-stroke: 0.05em rgb(0, 0, 0, 90%);
+    padding: 0.5em 3em;
     color: white;
-    font-size: 2.5em;
+    font-size: 3em;
+    text-align:center;
 }
 
 .texto-parrafo{
@@ -178,7 +172,7 @@ section img{
     height: auto;
     max-height: 30em;
     min-width: 18em;
-    width: 100%;
+    width: 90%;
     display:block;
     margin:auto;
 }
@@ -191,6 +185,11 @@ section img{
     overflow:hidden;
     box-shadow: 0 0 0 4px rgb(248, 247, 247, 80%);
     position:relative;
+}
+
+.h1-quevisitar{
+    font-size: 2.5em;
+    margin: 0.5em 0 1em 0.5em;
 }
 
 .slider{
@@ -251,5 +250,88 @@ section img{
 }
 
 .parrafo-slider{
-    margin: 0.4em;
+    margin: 0.3em 0.5em 0 0.5em;
+}
+
+@media screen and (max-width: 768px)
+{
+    body{
+        padding: 0px;
+    }
+
+    section img{
+        margin: 0 auto 0 auto;
+    }
+
+    .cabecera{
+        display:block;
+    }
+
+    .titulo{
+        font-size: 3em;
+    }
+
+    .logo{
+        height:auto;
+        width:100%;
+    }
+
+    #cont_b686a253e101e707257b83d6110dc66e{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    .contenedor2{
+        display:block;
+        grid-area:main;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    .responsive{
+    display:grid;
+    grid-template-areas: 'header header header'
+                        'nav nav nav'
+                        'main main main'
+                        'footer footer footer';
+    width: 100%;
+    margin: 0em 0em;
+    }
+
+    .parrafo-slider{
+        font-size: 0.8em;
+        overflow-y:scroll;
+    }
+
+    .titulogrande{
+        font-size: 2em;
+        text-align: center;
+        padding: 0.6em 0em;
+    }
+    
+    .h1-quevisitar{
+        font-size: 2em;
+        padding-top:0.5em;
+    }
+
+    .iframeGoogle{
+        height: 20em;
+        width:95%;
+    }
 }
