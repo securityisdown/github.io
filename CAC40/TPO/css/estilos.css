@@ -352,11 +352,11 @@ section img{
 
     section img{
         margin: 0em 0 1em 0;
+        width: 95%;
     }
 
     article>img{
         display:block;
-        width: 95%;
     }
 
     .cabecera{
