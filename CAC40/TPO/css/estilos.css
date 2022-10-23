@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,6 +12,10 @@ body {
     background-image: url('../images/BARILOCHE.jpg');
     background-attachment: fixed;
     background-repeat: round;
+}
+
+.responsive{
+    display:block;
 }
 
 header {
@@ -46,27 +49,26 @@ footer {
     border-radius: 0px 0px 30px 30px;
 }
 
-h1 {
-    margin-left: 0.6em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-h2{
-    margin-left: 0.8em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-}
-
-h3{
+article{
     margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 p{
-    margin: 1em 1em 1em 1.2em;
+    margin: 1em 1em 1em 0em;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    margin: 0.5em 1em 0.5em 0em;
+}
+
+h3{
+    margin: 0.7em 1em 0.5em 0em;
 }
 
 ul {
@@ -81,9 +83,7 @@ ul > li {
 
 section img{
     height: auto;
-    max-height: 30em;
     width: 60%;
-    min-width: 18em;
     display:block;
     margin: 1.5em auto 2em auto;
 }
@@ -111,7 +111,8 @@ section img{
 }
 
 .logo {
-    height: 180px;
+    height: auto;
+    width: 100%;
     opacity: 1;
 }
 
@@ -146,20 +147,11 @@ section img{
     align-items: center;
 }
 
-.presentacion{
-    display:grid;
-    grid-template-areas: 'titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande titulogrande'
-                        '. . . . texto-parrafo . . . .'
-                        '. . . . bariloche-img . . . .';
-}
-
 .titulogrande{
-    background-image: url(../images/nieve-presentacion-historia.jpg);
-    padding: 3rem;
-    grid-area: titulogrande;
-    -webkit-text-stroke: 0.05em rgb(0, 0, 0, 90%);
+    padding: 0.5em 3em;
     color: white;
-    font-size: 2.5em;
+    font-size: 3em;
+    text-align:center;
 }
 
 .texto-parrafo{
@@ -180,11 +172,8 @@ section img{
 }
 
 .imagen-principal{
-    grid-area: bariloche-img;
     height: auto;
-    max-height: 30em;
-    min-width: 18em;
-    width: 100%;
+    width: 90%;
     display:block;
     margin:auto;
 }
@@ -197,6 +186,11 @@ section img{
     overflow:hidden;
     box-shadow: 0 0 0 4px rgb(248, 247, 247, 80%);
     position:relative;
+}
+
+.h1-quevisitar{
+    font-size: 2.5em;
+    margin: 0.5em 0 1em 0.5em;
 }
 
 .slider{
@@ -257,5 +251,197 @@ section img{
 }
 
 .parrafo-slider{
-    margin: 0.4em;
+    margin: 0.3em 0.5em 0 0.5em;
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 768px)
+{
+    body{
+        padding: 0px;
+    }
+
+    section img{
+        margin: 0 0 1em 0;
+    }
+
+    article img{
+        width: 98%;
+    }
+
+    .cabecera{
+        grid-template-columns: 20% 80%;
+        column-gap: 1em;
+
+    }
+
+    .titulo{
+        font-size: 2.5em;
+    }
+
+    .logo{
+        height:auto;
+        width:100%;
+    }
+
+    #cont_b686a253e101e707257b83d6110dc66e{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    .contenedor2{
+        display:block;
+        grid-area:main;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    .responsive{
+    display:grid;
+    grid-template-areas: 'header header header'
+                        'nav nav nav'
+                        'main main main'
+                        'footer footer footer';
+    width: 95%;
+    margin: 0em auto;
+    }
+
+    .parrafo-slider{
+        font-size: 1em;
+        overflow-y:scroll;
+    }
+
+    .titulogrande{
+        font-size: 2em;
+        text-align: center;
+        padding: 0.6em 0em;
+    }
+    
+    .h1-quevisitar{
+        font-size: 2em;
+        padding-top:0.5em;
+    }
+
+    .iframeGoogle{
+        height: 20em;
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    body{
+        padding: 0px;
+    }
+
+    section img{
+        margin: 0em 0 1em 0;
+    }
+
+    article>img{
+        display:block;
+        width: 95%;
+    }
+
+    .cabecera{
+        display:block;
+    }
+
+    .titulo{
+        font-size: 2em;
+    }
+
+    .logo{
+        height:auto;
+        width:50%;
+    }
+
+    #cont_b686a253e101e707257b83d6110dc66e{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        padding-top:0.1em;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    .contenedor2{
+        display:block;
+        grid-area:main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    .responsive{
+    display:grid;
+    grid-template-areas: 'header header header'
+                        'nav nav nav'
+                        'main main main'
+                        'footer footer footer';
+    width: 100%;
+    margin: 0em 0em;
+    }
+
+    .container-slider{
+        margin: none;
+        width: 16em;
+    }
+
+    .parrafo-slider{
+        font-size: 0.8em;
+        overflow-y:scroll;
+    }
+
+    .titulogrande{
+        font-size: 2em;
+        text-align: center;
+        padding: 0.6em 0em;
+    }
+    
+    .h1-quevisitar{
+        font-size: 2em;
+        margin: 0em 0 0 0.5em;
+    }
+
+    .iframeGoogle{
+        height: 20em;
+        width:95%;
+    }
+
+    .texto-parrafo{
+        margin:0 0.5em 1em 0.5em;
+    }
 }
