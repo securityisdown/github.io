@@ -4,7 +4,7 @@ let header=`
     <img class="logo" src="https://barilocheturismo.gob.ar/images/banco_logos/32_screen-shot-2018-06-07-at-083446.png?1663022437" alt="Logo">
 </div>
 <div class="hijo">
-    <span class="titulo">Aventuras en Bariloche</span>
+    <span class="titulo centrar">Aventuras en Bariloche</span>
 </div>
 <div class="hijo">
     <div id="cont_b686a253e101e707257b83d6110dc66e"></div>
